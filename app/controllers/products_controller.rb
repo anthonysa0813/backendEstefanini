@@ -28,7 +28,7 @@ class ProductsController < ApplicationController
       quantity: params[:quantity],
       price: params[:price]
     )
-    pp product
+    render json: product
   end
 
   def destroy

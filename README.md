@@ -1,24 +1,46 @@
-# README
+# MiSaludApp | backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Proyecto de backend como parte del proceso de selección en la empresa de Stefanini.
 
-Things you may want to cover:
+## Pasos para inicializar el proyecto.
 
-* Ruby version
+### Paso 1
 
-* System dependencies
+```bash
+ bundle install
+```
 
-* Configuration
+- para instalar todas las dependencias del proyecto.
 
-* Database creation
+### Paso 2
 
-* Database initialization
+```bash
+rails db:create
+```
 
-* How to run the test suite
+- crea la base de datos en Postgresql
 
-* Services (job queues, cache servers, search engines, etc.)
+### Paso 3
 
-* Deployment instructions
+```bash
+rails db:migrate
+```
 
-* ...
+- Migra todas las tablas de los modelos.
+
+### Paso 4
+
+```bash
+rails db:seed
+```
+
+- Inicializa el proyecto con ciertos datos.
+
+### Paso 5
+
+```bash
+rails s
+```
+
+- Corre el proyecto el localhost:3000, que ayudará a consumir sus datos por el lado del frontend:
+- Proyecto del frontend de Stefanini: https://github.com/anthonysa0813/estefaniniFrontend
